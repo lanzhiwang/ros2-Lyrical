@@ -1,7 +1,7 @@
 FROM ubuntu:26.04
 
 ARG USERNAME=lanzhiwang
-ARG USER_UID=1000
+ARG USER_UID=2000
 ARG USER_GID=$USER_UID
 
 RUN set -eux; \
