@@ -18,7 +18,7 @@ RUN set -eux; \
     rm -rf /tmp/ros2-apt-source.deb; \
     apt update; \
     apt install -y ros-dev-tools; \
-    apt upgrade; \
+    apt upgrade -y; \
     apt install -y ros-lyrical-ros-base ros-lyrical-desktop; \
     rm -rf /var/lib/apt/lists/*; \
     echo "alias ll='ls -alFi --color=auto'" >> /etc/bash.bashrc; \
